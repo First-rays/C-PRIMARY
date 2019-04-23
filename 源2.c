@@ -1,18 +1,13 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
 #include<stdlib.h>
-int main2(){
-	int i = 0;
-	int leap = 1;
-	printf("1000到2000的闰年为：\n");
-	for (i = 1000; i <= 2000; i++){
-			if ((i % 4 == 0 && i % 100 != 0 )|| i % 400 == 0)
-			    leap = 0;
-			else
-				leap = 1; 
-		if (leap == 0){
-			printf("%d\t", i);
-		}
-	}
+int main(){
+	int a = 10;
+	int b = 20;
+	a = a^b;
+	b = a^b;
+	a = a^b;
+	printf("%d %d\n",a,b);
 	system("pause");
 	return 0;
 }

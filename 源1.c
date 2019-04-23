@@ -1,15 +1,14 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
 #include<stdlib.h>
 int main1(){
-	int i = 0;
-	int j = 0;
-	for (i = 1; i<=9 ; i++){
-		for (j = 1; j <=i; j++){
-			printf("%d*%d=%d\t", j , i , i*j);
-			}
-		printf("\n");
-		
-	}
-	system("pause");
+	int a = 10;
+	int b = 20;
+	printf("a = %d b = %d\n", a, b);
+	int t = a;
+		a = b;
+		b = t;
+	printf("a = %d b = %d\n", a, b);
+	system("pause");	
 	return 0;
 }
