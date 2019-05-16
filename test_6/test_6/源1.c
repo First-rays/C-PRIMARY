@@ -11,7 +11,7 @@ void print(int R, int C){
 		printf("\n");
 	}
 }
-int main1(){
+int main(){
 	int row = 0;
 	int col = 0;
 	scanf("%d %d", &row, &col);
